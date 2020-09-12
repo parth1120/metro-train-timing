@@ -1,0 +1,52 @@
+.container {
+    padding: 50px;
+}
+
+.subLink {
+    color: #5c96c7;
+}
+
+.headerBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infoBoxes {
+    margin-top: 15px;
+}
+
+.blackBoxContainer {
+    height: 100%;
+}
+
+.blackBox {
+    display: flex;
+    float: right;
+    align-items: center;
+    width: 55%;
+    height: 100%;
+    padding-left: 10px;
+    border-radius: 2px;
+    color: #fff;
+    background-color: #2f2f2f;
+}
+
+.tableContainer{
+    margin-top: 15px;
+}
+
+.mr {
+    margin-right: 10px;
+}
+
+.MuiButton-containedPrimary {
+    background-color: #37c4c9 !important;
+}
+
+.css-42igfv {
+    margin: 20% auto !important;
+}
+
+

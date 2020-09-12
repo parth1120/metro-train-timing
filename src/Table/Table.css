@@ -1,0 +1,26 @@
+.MuiAccordionSummary-root.Mui-expanded , .MuiAccordionSummary-root{
+    background-color: #19274c !important;
+    color: #fff;
+    margin-top: 10px !important;
+}
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 12px;
+  }
+  
+  td, th {
+    border: 2px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  th{
+    background-color: #00bddc;
+    text-align: center;
+  }
+
+  
