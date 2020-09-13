@@ -52,6 +52,11 @@
     min-width: 50px !important;
 }
 
+.react-datepicker-popper{
+    top: -4.6px !important;
+    left: -24px !important;
+}
+
 
 
 

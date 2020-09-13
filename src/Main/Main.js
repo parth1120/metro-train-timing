@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import './Main.css'
 import axios from '../config/axios'
 import DatePicker from "react-datepicker";
@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
         marginLeft: '-20px', 
         color: '#00bddc'
     },
-})); 
+}));
 
 
 
@@ -40,6 +40,8 @@ function Main() {
     const [fromDate, setfromDate] = useState(1577888571659)
     const [userdata, setuserdata] = useState({})
     const [loading, setloading] = useState(false)
+    const inputFrom = useRef(null);
+    const inputTo = useRef(null);
 
     useEffect(() => {
         getData(1593613371659, 1577888571659)
@@ -117,8 +119,9 @@ function Main() {
                                 style={{ position: 'relative' }}
                                 selected={fromDate}
                                 onChange={handleChangeFromDate}
+                                ref={inputFrom}
                             />
-                            <CalendarTodayIcon fontSize={'inherit'} className={classes.rootCalender} />
+                            <CalendarTodayIcon onClick={() => inputFrom.current.input.focus()} fontSize={'inherit'} className={classes.rootCalender} />
                         </div>
                         <div className="mr">
                             To
@@ -128,8 +131,9 @@ function Main() {
                                 selected={toDate}
                                 onChange={handleChangeToDate}
                                 style={{ position: 'relative' }}
+                                ref={inputTo}
                             />
-                             <CalendarTodayIcon fontSize={'inherit'} className={classes.rootCalender} />
+                            <CalendarTodayIcon onClick={() => inputTo.current.input.focus()} fontSize={'inherit'} className={classes.rootCalender} />
                         </div>
                         <div className="mr">
                             <Button variant="contained" color="primary" size={'default'} onClick={(e) => { getData(toDate, fromDate) }}><SearchIcon fontSize={'inherit'} /></Button>
