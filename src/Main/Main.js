@@ -7,7 +7,7 @@ import Button from '@material-ui/core/Button';
 import SearchIcon from '@material-ui/icons/Search';
 import SystemUpdateAltIcon from '@material-ui/icons/SystemUpdateAlt';
 import Grid from '@material-ui/core/Grid';
-
+import { makeStyles } from '@material-ui/core/styles';
 import LocalShippingIcon from '@material-ui/icons/LocalShipping';
 import SpeedIcon from '@material-ui/icons/Speed';
 import WatchLaterIcon from '@material-ui/icons/WatchLater';
@@ -20,10 +20,22 @@ import Table from '../Table/Table'
 import Moment from 'react-moment';
 import 'moment-timezone';
 import LoadingOverlay from 'react-loading-overlay';
+import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
+
+
+const useStyles = makeStyles((theme) => ({
+    rootCalender: {
+        position: 'absolute', 
+        marginTop: '4px', 
+        marginLeft: '-20px', 
+        color: '#00bddc'
+    },
+})); 
 
 
 
 function Main() {
+    const classes = useStyles();
     const [toDate, settoDate] = useState(1593613371659)
     const [fromDate, setfromDate] = useState(1577888571659)
     const [userdata, setuserdata] = useState({})
@@ -102,9 +114,11 @@ function Main() {
                     </div>
                         <div className="mr">
                             <DatePicker
+                                style={{ position: 'relative' }}
                                 selected={fromDate}
                                 onChange={handleChangeFromDate}
                             />
+                            <CalendarTodayIcon fontSize={'inherit'} className={classes.rootCalender} />
                         </div>
                         <div className="mr">
                             To
@@ -113,7 +127,9 @@ function Main() {
                             <DatePicker
                                 selected={toDate}
                                 onChange={handleChangeToDate}
+                                style={{ position: 'relative' }}
                             />
+                             <CalendarTodayIcon fontSize={'inherit'} className={classes.rootCalender} />
                         </div>
                         <div className="mr">
                             <Button variant="contained" color="primary" size={'small'} onClick={(e) => { getData(toDate, fromDate) }}><SearchIcon fontSize={'inherit'} /></Button>

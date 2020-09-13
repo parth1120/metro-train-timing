@@ -96,7 +96,7 @@ export default function Table(props) {
                                         <th>#</th>
                                         <th>Trip Starts(Node) Trip Ends(Node)</th>
                                         <th>Driver Name</th>
-                                        <th>Trip Expanses</th>
+                                        <th>Trip Expenses</th>
                                         <th>Trip Km</th>
                                         <th>Trip GPS Km</th>
                                         <th>Trip Time</th>
@@ -119,9 +119,15 @@ export default function Table(props) {
                                                     </div>
                                                 </td>
                                                 <td>{tableData.totalKm} Km</td>
-                                                <td>{tableData.gpsDistance} Km</td>
+                                                <td>{tableData.gpsDistance.toFixed(2)} Km</td>
                                                 <td>{calculateTimeDiff(tableData?.startTripDate, tableData?.endTripDate)}</td>
-                                                <td>{tableData.startODOMeter || 0} <span style={{ marginTop: '4px', marginLeft: '5px', color: '#00bddc' }}><ForwardIcon fontSize={'inherit'} /></span>  {tableData.endODOMeter || 0}</td>
+                                                <td>
+                                                    <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
+
+                                                        {tableData.startODOMeter || 'N/A'} <span style={{ marginTop: '4px', marginLeft: '5px', color: '#00bddc' }}><ForwardIcon fontSize={'inherit'} /></span>  {tableData.endODOMeter || 'N/A'}
+                                                    </div>
+
+                                                </td>
                                                 <td style={{ display: 'flex', justifyContent: 'center' }}>
                                                     <div>
                                                         <Button className={classes.margins} size={'small'} variant="contained" color="primary" onClick={() => { alert('Movement Report') }}>Movement Report
