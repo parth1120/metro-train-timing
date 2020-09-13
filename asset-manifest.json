@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/metro-train-timing/static/css/main.c159a27e.chunk.css",
+    "main.js": "/metro-train-timing/static/js/main.ae3e6dee.chunk.js",
+    "main.js.map": "/metro-train-timing/static/js/main.ae3e6dee.chunk.js.map",
+    "runtime-main.js": "/metro-train-timing/static/js/runtime-main.cc0f9097.js",
+    "runtime-main.js.map": "/metro-train-timing/static/js/runtime-main.cc0f9097.js.map",
+    "static/css/2.8d4cdce2.chunk.css": "/metro-train-timing/static/css/2.8d4cdce2.chunk.css",
+    "static/js/2.266a70ab.chunk.js": "/metro-train-timing/static/js/2.266a70ab.chunk.js",
+    "static/js/2.266a70ab.chunk.js.map": "/metro-train-timing/static/js/2.266a70ab.chunk.js.map",
+    "index.html": "/metro-train-timing/index.html",
+    "precache-manifest.f93da8b72c5e86b93c8519aff5cd8bd6.js": "/metro-train-timing/precache-manifest.f93da8b72c5e86b93c8519aff5cd8bd6.js",
+    "service-worker.js": "/metro-train-timing/service-worker.js",
+    "static/css/2.8d4cdce2.chunk.css.map": "/metro-train-timing/static/css/2.8d4cdce2.chunk.css.map",
+    "static/css/main.c159a27e.chunk.css.map": "/metro-train-timing/static/css/main.c159a27e.chunk.css.map",
+    "static/js/2.266a70ab.chunk.js.LICENSE.txt": "/metro-train-timing/static/js/2.266a70ab.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cc0f9097.js",
+    "static/css/2.8d4cdce2.chunk.css",
+    "static/js/2.266a70ab.chunk.js",
+    "static/css/main.c159a27e.chunk.css",
+    "static/js/main.ae3e6dee.chunk.js"
+  ]
+}
