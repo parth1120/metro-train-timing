@@ -128,8 +128,8 @@ export default function Table(props) {
                                                     </div>
 
                                                 </td>
-                                                <td style={{ display: 'flex', justifyContent: 'center' }}>
-                                                    <div>
+                                                <td>
+                                                    <div style={{ display: 'flex', justifyContent: 'center' }}>
                                                         <Button className={classes.margins} size={'small'} variant="contained" color="primary" onClick={() => { alert('Movement Report') }}>Movement Report
                                                           </Button>
                                                         <Button variant="contained" color="primary" size={'small'} onClick={() => { alert('Stoppage Report') }}>Stoppage Report

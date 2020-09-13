@@ -132,7 +132,7 @@ function Main() {
                              <CalendarTodayIcon fontSize={'inherit'} className={classes.rootCalender} />
                         </div>
                         <div className="mr">
-                            <Button variant="contained" color="primary" size={'small'} onClick={(e) => { getData(toDate, fromDate) }}><SearchIcon fontSize={'inherit'} /></Button>
+                            <Button variant="contained" color="primary" size={'default'} onClick={(e) => { getData(toDate, fromDate) }}><SearchIcon fontSize={'inherit'} /></Button>
                         </div>
                         <div className="mr">
                             <Button variant="outlined" color="primary" size={'small'} startIcon={<SystemUpdateAltIcon />} onClick={() => { alert('Export') }}>Export</Button>

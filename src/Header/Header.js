@@ -34,7 +34,7 @@ function Header() {
                     <div variant="h6" className={classes.title}>
                         <img src="https://www.watsooexpress.com/img/Logo.png" style={{backgroundColor:'#fff'}} width="10%" alt="logo"></img>
                     </div>
-                    <Button variant="contained" startIcon={<PowerSettingsNewIcon />} onClick={() => { alert('Logout') }}>Logout</Button>
+                    <Button variant="contained" size={'small'} startIcon={<PowerSettingsNewIcon />} onClick={() => { alert('Logout') }}>Logout</Button>
                 </Toolbar>
             </AppBar>
         </div>

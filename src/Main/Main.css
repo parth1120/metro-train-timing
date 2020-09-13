@@ -48,6 +48,9 @@
 .css-42igfv {
     margin: 20% auto !important;
 }
+.MuiButton-root{
+    min-width: 50px !important;
+}
 
 
 
